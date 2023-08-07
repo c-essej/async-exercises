@@ -45,10 +45,10 @@ const BASE_URL = 'http://numbersapi.com';
  * Once you have them all, put them on the page. It’s okay if some of the
  * facts are repeats. **/
 
-async function questionThree() {
-  const response = await axios.get(`${BASE_URL}/3?json`);
+async function questionThree1() {
+  const response1 = await axios.get(`${BASE_URL}/3?json`);
 
-  let factsArray = Object.values(response.data);
+  let factsArray = Object.values(response1.data);
   console.log(factsArray);
 
   for (let fact of factsArray){
@@ -57,7 +57,18 @@ async function questionThree() {
 
 }
 
-async function questionThre
+async function questionThree2() {
+  const response1 = await axios.get(`${BASE_URL}/3?json`);
+
+  let factsArray = Object.values(response1.data);
+  console.log(factsArray);
+
+  for (let fact of factsArray){
+    console.log(fact);
+  }
+
+}
+
 
 questionThree();
 
